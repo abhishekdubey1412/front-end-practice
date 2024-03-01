@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+		header{
+			background-image: linear-gradient(20deg,black,blue);
+		}
+
+		nav{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav .logo{
+			display: flex;
+			align-items: center;
+			margin-left: 10px;
+			filter: invert(1);
+		}
+
+		nav .search{
+			display: flex;
+			align-items: center;
+		}
+
+		.search input{
+			width: 21vw;
+			height: 35px;
+			border: 2px solid red;
+			border-radius: 8px 0 0 8px;
+			padding-left: 10px;
+			background-color: black;
+			color: white;
+		}
+
+		.search ::placeholder {
+  			color: white;
+  			opacity: 0.9; /* Firefox */
+		}
+
+
+		.search button{
+			width: 5vw;
+			height: 35px;
+			border: 1px solid red;
+			border-radius: 0 8px 8px 0;
+			font-size: 17px;
+			text-align: center;
+			color: white;
+			background-color: black;
+			cursor: pointer;
+		}
+
+		nav ul{
+			display: flex;
+			align-items: center;
+			height: 50px;
+		}
+
+		nav ul li{
+			list-style: none;
+			padding: 0 23px;
+			transition: 1s;
+			margin-right: 3px;
+			cursor: pointer;
+		}
+
+		li:hover{
+			background-color: black;
+			padding: 16px 23px;
+		}
+
+		nav ul li a{
+			color: white;
+			text-decoration: none;
+		}
+
+		nav .menu{
+			display: none;
+
+		}
+
+		footer{
+			max-width: 1100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+			background-color: black;
+		}
+
+		footer p{
+			color: white;
+			font-family: sans-serif;
+			letter-spacing: 1.2px;
+			text-align: center;
+		}
+
+		main{
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+
+		main p{
+			font-family: sans-serif;
+			letter-spacing: 1px;
+		}
+
+		@media screen and (max-width: 866px){
+
+			nav ul{
+				display: none;
+			}
+
+			nav .logo{
+				margin: 6px 30px;
+			}
+
+			nav .search input{
+				width: 30vw;
+			}
+
+			nav .search button{
+				width: 10vw;
+				color: white;
+			}
+
+			nav .menu{
+				display: flex;
+				align-items: center;
+				margin-right: 30px;
+			}
+
+			nav .menu .fa{
+				font-size: 45px;
+				color: white;
+			}
+		}
+
+		@media screen and (max-width: 450px){
+
+			nav .search, ul{
+				display: none;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="instagram.png" alt="logo">
+			</div>
+			<div class="search">
+				<input type="text" name="search" placeholder="Search...">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+			<div class="menu">
+				<i class="fa fa-home"></i>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Privecy</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</main>
+
+	<footer>
+		<p>Lorem ipsum &copy; dolor sit amet, consectetur adipisicing elit.</p>
+	</footer>
+
+	<script type="text/javascript">
+		function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+    			x.className = "topnav";
+  				}
+			}
+	</script>
+
+</body>
+</html>

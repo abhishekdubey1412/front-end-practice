@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HN & UC & Footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+	background-color: grey;
+	color: white;
+	text-align: center;
+	padding: 14px 18px; 
+}
+
+.navbar{
+	background-color: black;
+	overflow: hidden;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: white;
+	padding: 14px 16px;
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+.navbar a:hover{
+	background-color: white;
+	color: black;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+}
+
+.column.side{
+	width: 25%;
+}
+
+.column.midlle{
+	width: 50%;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width:600px){
+	.column.side, .column.midlle{
+		width: 100%;
+	}
+}
+
+.footer{
+	background-color: grey;
+	padding: 14px 18px;
+	text-align: center;
+	color: white;
+}
+
+</style>
+<body>
+<div class="header"><h1>Header</h1><p>Resize the browser window to see the responsive effect.</p></div>
+<div class="navbar">
+	<a href="#">Link</a>
+	<a href="#">Link</a>
+	<a href="#">Link</a>
+</div>
+<div class="row">
+	<div class="column side"><h1>Side</h1><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+	<div class="column midlle"><h1>Main Content</h1><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="column side"><h1>Side</h1><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+<div class="footer"><p>Footer</p></div>
+</body>
+</html>

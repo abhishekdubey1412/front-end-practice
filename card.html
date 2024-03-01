@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>card</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		color: #e60027;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 700px;
+		background-color: #064d44;
+	}
+
+	.review .fa {
+ 		 font-size: 16px;
+ 		 cursor: pointer;
+	}
+
+	.review {
+		margin-bottom: 20px;
+	}
+
+	.checked {
+  		color: orange;
+	}
+
+	.imrv{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.imrv img{
+		width: 90px;
+	}
+
+	.imrv h1{
+		margin-left: 25px;
+	}
+
+	.imrv h1 span{
+		font-size: 12px;
+		color: white;
+	}
+
+	.card{
+		width: 300px;
+	}
+
+	.content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+		height: 400px;
+		background-color: black;
+		box-shadow: 5px 5px 10px white;
+	}
+
+	.cont p{
+		color: white;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="card">
+
+			<div class="imrv">
+				<img src="profile.png">
+				<h1>John Wike<span><br>SEO Export</span></h1>
+			</div>
+
+			<div class="review">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			</div>
+
+			<div class="cont">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

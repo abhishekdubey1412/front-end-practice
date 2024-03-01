@@ -1,0 +1,82 @@
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+		color: #e60027;
+	}
+
+	.grid{
+		display: flex;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 700px;
+		background-color: #064d44;
+	}
+
+	.review .fa {
+ 		 font-size: 16px;
+ 		 cursor: pointer;
+	}
+
+	.review {
+		margin-bottom: 20px;
+	}
+
+	.checked {
+  		color: orange;
+	}
+
+	.imrv{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	.imrv img{
+		width: 80px;
+	}
+
+	.imrv h1{
+		margin-left: 25px;
+	}
+
+	.imrv h1 span{
+		font-size: 17px;
+		color: white;
+	}
+
+	.card{
+		width: 300px;
+	}
+
+	.content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+		height: 400px;
+		background-color: black;
+		box-shadow: 5px 5px 10px white;
+		margin-left: 20px;
+	}
+
+	.cont p{
+		color: white;
+	}
+
+	.social{
+		text-align: center;
+	}
+
+	.socialm{
+		margin: 20px 20px 0 0;
+		font-size: 20px;
+	}
+
+	.socialm:hover{
+		color: blue;
+	}

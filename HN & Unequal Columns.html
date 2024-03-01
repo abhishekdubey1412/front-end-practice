@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HN & Unequal Columns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+	background-color: grey;
+	padding: 14px 18px;
+	text-align: center;
+	color: white;
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: black;
+}
+
+.navbar a{
+	text-align: center;
+	float: left;
+	display: block;
+	text-decoration: none;
+	padding: 14px 16px; 
+	color: white;
+}
+
+.navbar a:hover{
+	background-color: white;
+	color: black;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+}
+
+.column.side{
+	width: 25%;
+}
+
+.column.middle{
+	width: 50%;
+}
+
+.row:after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+@media screen and (max-width:600px){
+	.column.side, .column.middle{
+		width: 100%;
+	}
+}
+
+</style>
+<body>
+<div class="header"><h1>Header</h1><p>Resize the browser window to see the responsive effect.</p></div>
+<div class="navbar">
+	<a href="#">Link</a>
+	<a href="#">Link</a>
+	<a href="#">Link</a>
+</div>
+<div class="row">
+	<div class="column side"><h2>Side</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p></div>
+	<div class="column middle"><h2>Main Content
+</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+	<div class="column side"><h2>Side</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p></div>
+</div>
+</body>
+</html>

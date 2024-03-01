@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Find hot girls near you. Live Gaming, Show talent, Make friends, Video chat, Live dance, Live music, Live Astrology and more">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="LustyKaka">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+  background-color: lightgrey;
+}
+
+.header {
+  text-align: center;
+  color: black;
+  padding: 50px;
+}
+
+.footer {
+  background-color: black;
+  color: #ffffff;
+  font-size: 12px;
+  margin:0;
+}
+
+.footer p{
+  font-size: 13px;
+}
+
+.footer a{
+  color: red;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+button{
+  padding: 14px;
+  background-color: transparent;
+  border: 1px solid #6e6b65;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+h1, h2, p,h5{
+  padding: 0 15px;
+}
+
+ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  border-bottom: 1px solid lightgrey;
+  padding: 8px 16px;
+  display: list-item;
+  margin-top: 0;
+  text-align: -webkit-match-parent;
+}
+
+li img{
+  float: left !important;
+  margin-right: 16px !important;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.spantag span{
+  background-color: lightgrey;
+  padding: 2px;
+  font-size: 12px;
+  margin-bottom: 16px !important;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.row{
+  justify-content: center;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 993px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+ form.example{
+    display: none;
+  }
+}
+
+.ads{
+  height: 400px;
+  background-color: white;
+}
+
+.ads h2{
+  padding: 20px;
+  background-color: lightgrey;
+  font-weight: 200;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+span.comn{
+    margin: 12px;
+  }
+
+@media screen and (max-width: 400px){
+  span.comn, form.example{
+    display: none;
+  }
+}
+
+.about{
+  background-color: black;
+  height: auto;
+}
+
+.foooter{
+  overflow: hidden;
+}
+
+.icon{
+  text-align: center;
+  margin: 13px 0;
+  text-align: center;
+}
+
+i.fa.fa-twitter, i.fa.fa-instagram,i.fa.fa-linkedin{
+  margin-left: 14px;
+}
+
+.icon i{
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  padding-top:4px;
+}
+
+.icon i:hover{
+  border-color: red;
+}
+
+.container input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+iframe{
+  border-style: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MY BLOG</h1>
+  <p>Welcome to the blog of <span style="background-color: black; color: white; padding: 2px 5px;">unknown</span></p>
+</div>
+
+<div class="row" style="max-width: 1400px; margin: auto;">
+  <div class="col-8">
+    <div class="card" style="margin-bottom: 40px; padding-bottom: 10px;">
+      <img src="img_avatar.jpg" alt="titel imge" style="width: 100%; height: auto;">
+      <h1>TITLE HEADING</h1>
+      <h5>Title description, April 7, 2014</h5>
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <button><b>Read More &raquo;</b></button>
+        <span class="comn" style="float: right; margin-right: 30px;"><b>Comments</b><span class="comncount" style="background-color: black; color: white; padding: 5px 10px; margin-left: 5px;">0</span></span>
+    </div>
+    <div class="card" style="padding-bottom: 10px; margin-bottom: 20px;">
+      <img src="img_avatar.jpg" alt="my blog imge" style="width: 100%; height: auto;">
+      <h1>MY BLOG</h1>
+      <h5>Title description, April 7, 2014</h5>
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <button><b>Read More &raquo;</b></button>
+        <span class="comn" style="float: right; margin-right: 30px;"><b>Comments</b><span class="comncount" style="background-color: black; color: white; padding: 5px 10px; border-radius: 50px; margin-left: 5px;">2</span></span>
+    </div>
+    <div class="card" style="padding-bottom: 10px; margin-bottom: 20px;">
+      <img src="img_avatar.jpg" alt="my blog 2 img" style="width: 100%; height: auto">
+      <h1>MY BLOG 2</h1>
+      <h5>Title description, April 7, 2014</h5>
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <button><b>Read More &raquo;</b></button>
+        <span class="comn" style="float: right; margin-right: 30px;"><b>Comments</b><span class="comncount" style="background-color: black; color: white; padding: 5px 10px; border-radius: 50px; margin-left: 5px;">3</span></span>
+    </div>
+    <div class="card" style="padding-bottom: 10px; margin-bottom: 20px;">
+      <img src="img_avatar.jpg" alt="my blog 3 img" style="width: 100%; height: auto;">
+      <h1>MY BLOG 3</h1>
+      <h5>Title description, April 7, 2014</h5>
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <button><b>Read More &raquo;</b></button>
+        <span class="comn" style="float: right; margin-right: 30px;"><b>Comments</b><span class="comncount" style="background-color: black; color: white; padding: 5px 10px; border-radius: 50px; margin-left: 5px;">4</span></span>
+    </div>
+    <div class="pagination" style="margin-bottom: 20px;">
+      <a href="#"> &laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">Next &raquo;</a>
+    </div>
+  </div>
+  <div class="col-4 right" style="position: sticky; position: -webkit-sticky;
+  position: sticky; top: 0;">
+  <div class="inputform" style="padding-bottom: 1px; margin-bottom: 20px; background-color: transparent;">
+    <form class="example">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+    <div class="card" style="padding-bottom: 1px; margin-bottom: 40px;">
+    <img src="img_avatar.jpg" alt="my name img" style="width: 100%;">
+    <h2>My Name</h2>
+    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+  </div>
+  <div class="card" style="margin-bottom: 40px;">
+    <h2 style="background-color: lightgrey; padding: 20px; font-weight: 200;">Popular Posts</h2>
+    <ul>
+      <li><img src="img_avatar.jpg" alt="avtar" style="width: 50px;"><span style="font-size:20px;">Lorem</span><br><span>Sed mattis nunc</span></li>
+      <li><img src="img_avatar.jpg" alt="avtar" style="width: 50px;"><span style="font-size:20px;">Ipsum</span><br><span>Praes tinci sed</span></li>
+      <li><img src="img_avatar.jpg" alt="avtar" style="width: 50px;"><span style="font-size:20px;">Dorum</span><br><span>Ultricies congue</span></li>
+      <li><img src="img_avatar.jpg" alt="avtar" style="width: 50px;"><span style="font-size:20px;">Mingsum</span><br><span>Lorem ipsum dipsum</span></li>
+    </ul>
+  </div>
+    <div class="card spantag" style="margin-bottom: 40px;">
+      <h2 style="background-color: lightgrey; padding: 20px; font-weight: 200;">Tags</h2>
+    <p><span style="background-color: black; color: white; font-size: 15px;">Travel</span> <span>New York</span> <span>London</span>
+      <span>IKEA</span> <span>NORWAY</span> <span>DIY</span>
+      <span>Ideas</span> <span>Baby</span> <span>Family</span>
+      <span>News</span> <span>Clothing</span> <span>Shopping</span>
+      <span>Sports</span> <span>Games</span>
+    </p>
+    </div> 
+    <div class="card ads" style="margin-bottom: 20px;">
+      <h2>Advertisement</h2>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="row">
+  <div class="col-4 about"><h2>About Us</h2><hr>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  </div>
+  <div class="col-4 about"><h2>Contact Us</h2><hr>
+    <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </div>
+  <div class="col-4 about">
+    <h2>Youtube Channel</h2><hr>
+    <iframe src="https://www.youtube.com/embed/YkT8rhP-AlA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="width: 100%; height: 200px; margin-top: 20px;"></iframe>
+  </div>
+</div><hr>
+<div class="foooter">
+  <div class="col-6">
+  <p>Copyright © 2021 <a href="#">Viral Feed Bee</a> . All rights reserved. Theme: ColorMag by ThemeGrill. Powered by <a href="#"> WordPress</a></p>
+  </div>
+  <div class="col-6">
+    <div class="icon">
+    <a href="#"><i class="fa fa-facebook" style="font-size:30px; color: #3b5a9b"></i></a>
+    <a href="#"><i class="fa fa-twitter" style="font-size:30px; color: #289dcc"></i></a>
+    <a href="#"><i class="fa fa-instagram" style="font-size:30px; color: #289dcc"></i></a>
+    <a href="#"><i class="fa fa-linkedin" style="font-size:30px; color: blue"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

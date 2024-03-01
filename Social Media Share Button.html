@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Share Button</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js""></script>
+  <style>
+ *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+nav{
+    position: fixed;
+    width: 60px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.4);
+}
+
+nav li{
+  height: 60px;
+  position: relative;
+}
+
+nav li a{
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  padding-left: 25%;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  transition: all 1s linear;
+}
+
+nav li:nth-child(1) a{
+  background-color: #3b5998;
+}
+
+nav li:nth-child(2) a{
+  background-color: #00aced;
+}
+
+nav li:nth-child(3) a{
+  background-color: #E1306C;
+}
+
+nav li:nth-child(4) a{
+  background-color: #007bb6;
+}
+
+nav li:nth-child(5) a{
+  background-color: #bb0000;
+}
+
+nav li a i{
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  font-size: 27px;
+}
+
+nav li span{
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: none;
+}
+
+a:hover{
+  z-index: 1;
+  width: 180px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,.3); #
+}
+
+ul li a:hover span{
+  display: block;
+  padding-left: 40px;
+}
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i><span>Linkedin</span></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a></li>
+    </ul>
+  </nav>
+
+
+</body>
+</html>

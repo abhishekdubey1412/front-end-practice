@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>	
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span:nth-child(1)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 6s linear infinite;
+}
+
+.square:hover span:nth-child(1){
+  background-color: blue;
+  border: none;
+}
+
+.square span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+
+.square:hover span:nth-child(2){
+  background-color: blue;
+  border: none;
+}
+
+.square span:nth-child(3)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: animate2 10s linear infinite;
+}
+
+.square:hover span:nth-child(3){
+  background-color: blue;
+  border: none;
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.content{
+  position: relative;
+  padding: 40px 60px;
+  color: white;
+  text-align: center;
+  transform: 0.5s;
+  z-index: 1000; 
+}
+
+.content a{
+  position: relative;
+  padding: 6px 18px;
+  margin-top: 10px;
+  display: inline-block;
+  border: 2px solid white;
+  font-weight: 600;
+  border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+  text-decoration: none;
+  color: white;
+}
+
+.content a:hover{
+  background: white;
+  color: black;
+}
+
+.scnd, .trd{
+  margin-left: 50px;
+}
+
+</style>
+<body>
+  <div class="square">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="content">
+      <h2>Post Title</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="square scnd">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="content">
+      <h2>Post Title</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="square trd">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="content">
+      <h2>Post Title</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+}
+  .main{
+    background-color: red;
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: white;
+  }
+  .main2{
+    background-color: green;
+    float: left;
+    width: 60%;
+    text-align: center;
+    color: white;
+  }
+  .main3{
+    background-color: blue;
+    float: right;
+    width: 20%;
+    text-align: center;
+    color: white;
+  }
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+::-webkit-scrollbar{
+  width: 25px;
+  background-color: grey;
+}
+
+::-webkit-scrollbar-track{
+  border: 5px solid black;
+}
+
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(yellow, red);
+  border-radius: 50px;
+}
+
+@media screen and (max-width:800px) {
+  .main,.main2,.main3{
+    width: 100%
+  }
+  p{
+    font-size: 5vw;
+  }
+}
+
+</style>
+<body>
+  <div class="main"><p>Abhishek</p></div>
+  <div class="main2"><p>Abhishek</p></div>
+  <div class="main3"><p>Abhishek</p></div>
+  <div class=""><img src="img_avatar.jpg"></div>
+</body>
+</html>
